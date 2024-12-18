@@ -6,7 +6,7 @@
       <class name="marriageVerse.addProfile2">
         <methods>
           <include name="beforeTest"/>
-          <include name="addProfiles"/>
+          <include name="enterMaleAndFemalePro"/>
         </methods>
       </class> <!-- marriageVerse.addProfile2 -->
     </classes>

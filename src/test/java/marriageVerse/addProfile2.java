@@ -38,7 +38,7 @@ static	 int row=0;
 		driver = new ChromeDriver();
 		dg = new DataGen();
 		driver.get("https://mverse-7ed6d.web.app");
-		driver.manage().window().fullscreen();
+		
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
 		 fileName = ExcelUti.createExcelFile();
 
@@ -76,7 +76,11 @@ static	 int row=0;
 
 
 	public static void addProfiles(String gen) throws InterruptedException, AWTException {
-	
+		driver.manage().window().maximize();
+	    String GenValue="Male";
+	    if(gen.contains("FEMALE"))
+	    	GenValue="Female";
+		
 	int col=0;
 		driver.findElement(By.xpath("//a[@routerlink='/signup']")).click();
 		String email=dg.getEmail();
@@ -96,7 +100,7 @@ static	 int row=0;
 		
 		driver.findElement(By.xpath("//ion-button[@type='button']")).click();
 		driver.findElement(By.xpath(gen)).click();
-		ExcelUti.addDataToExcel(fileName, sheetName, row, col++, "Male");
+		ExcelUti.addDataToExcel(fileName, sheetName, row, col++, GenValue);
 		// driver.findElement(By.cssSelector("div.wheel-order-month-first >
 		// ion-picker-internal >
 		// ion-picker-column-internal.day-column.ion-color.ion-color-primary.md.hydrated"))
@@ -275,10 +279,10 @@ static	 int row=0;
 //	robot.keyPress(KeyEvent.VK_ENTER);
 //	robot.keyRelease(KeyEvent.VK_ENTER);
 		
-		String filePath = "C:\\Users\\Hustler\\eclipse-workspace\\MarriageVerse\\Pictures\\M4.jpg";
+		String filePath = "C:\\Pictures\\M4.jpg";
 		if(gen.contains("FEMALE"))
 		{
-			filePath = "C:\\Users\\Hustler\\eclipse-workspace\\MarriageVerse\\Pictures\\F8.jpg";
+			filePath = "C:\\Pictures\\F8.jpg";
 		}
 	
 		

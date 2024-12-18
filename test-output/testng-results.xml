@@ -2,16 +2,16 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-12-16T16:14:35 IST" name="Default suite" finished-at="2024-12-16T16:17:00 IST" duration-ms="145210">
+  <suite started-at="2024-12-18T16:06:32 IST" name="Default suite" finished-at="2024-12-18T16:08:54 IST" duration-ms="141994">
     <groups>
     </groups>
-    <test started-at="2024-12-16T16:14:35 IST" name="Default test" finished-at="2024-12-16T16:17:00 IST" duration-ms="145210">
+    <test started-at="2024-12-18T16:06:32 IST" name="Default test" finished-at="2024-12-18T16:08:54 IST" duration-ms="141994">
       <class name="marriageVerse.addProfile2">
-        <test-method is-config="true" signature="beforeTest()[pri:0, instance:marriageVerse.addProfile2@3b69e7d1]" started-at="2024-12-16T16:14:35 IST" name="beforeTest" finished-at="2024-12-16T16:14:41 IST" duration-ms="5784" status="PASS">
+        <test-method is-config="true" signature="beforeTest()[pri:0, instance:marriageVerse.addProfile2@77eca502]" started-at="2024-12-18T16:06:32 IST" name="beforeTest" finished-at="2024-12-18T16:06:39 IST" duration-ms="7315" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeTest -->
-        <test-method signature="enterMaleAndFemalePro()[pri:0, instance:marriageVerse.addProfile2@3b69e7d1]" started-at="2024-12-16T16:14:41 IST" name="enterMaleAndFemalePro" finished-at="2024-12-16T16:17:00 IST" duration-ms="139342" status="PASS">
+        <test-method signature="enterMaleAndFemalePro()[pri:0, instance:marriageVerse.addProfile2@77eca502]" started-at="2024-12-18T16:06:39 IST" name="enterMaleAndFemalePro" finished-at="2024-12-18T16:08:54 IST" duration-ms="134572" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- enterMaleAndFemalePro -->
